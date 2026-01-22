@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Fanny</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="lock-screen">
+        <h2>Contraseña Requerida</h2>
+        <p> Al año que nos conocimos deberas restarle la cantidad de años que se tarda en encontrar un alma como la tuya.</p>
+        <input type="password" id="passcode" placeholder="0000">
+        <br>
+        <button onclick="unlock()">Abrir</button>
+        <p class="hint">Pista: PLUTON arraund the sun </p>
+    </div>
+
+    <div class="back" id="content">
+        <h1>Para Fanny</h1>
+        <p>Mi 14 de Febrero es el 2 de Septiembre <br> Desde aquel día, todo cambió.</p>
+        <hr>
+        <div class="lyrics">
+            <p><strong>"Kill Me With Love" &#128062</strong></p>
+            <p>Ni se me ocurre nada , estoy hebrio y es cuando programo el corazon aparece y me dice que no puedo seguir sin tu amor; yo no lo escucho porque el el no sabe lo que es tener que imaginar como es hacer desaear al amor de tu vida cada dia como si perdirera la memoria
+                Tantas heridas puedo entenderlo <br>
+                Peor es lastimarse entero <br>
+                Talvez encuentres el santo grial <br>
+                Tanta amargura no esta  bien <br>
+                Mátame con amor<br>
+            Dispara a mi corazón<br>
+            No retrocedo bajo fuego no<br>
+            Pelea lo que quieras<br>
+            Por mi esta bien</p>
+        </div>
+        <p><em>Magias oscuras han dominado... pero mi amor por ti resiste.</em></p>
+<div class="playlist-container">
+    <h3>Mis canciones para ti</h3>
+    
+    <div class="song" onclick="reproducir('audio/10 In These Arms.mp3')"  >
+        <span>🎵 In These Arms</span>
+    </div>
+
+     <div class="song" onclick="reproducir('audio/03 Someday I_ll Be Saturday Night.mp3')">
+        <span>🎵 Someday I'll Be Saturday Night</span>
+    </div>
+
+    <div class="song" onclick="reproducir('audio/12 I_ll Be There For You.mp3')">
+        <span>🎵 I'll Be There For You</span>
+    </div>
+    <div class="song" onclick="reproducir('audio/15 Never Say Goodbye.mp3')">
+        <span>🎵 Never Say Goodbye</span>
+    </div>
+
+    <div id="reproductor-actual" style="margin-top: 20px;">
+        <p id="titulo-sonando" style="font-weight: bold;"></p>
+        <audio id="miAudio" controls style="width: 100%;"></audio>
+    </div>
+</div>
+<div id="reacciones" style="margin-top: 30px; text-align: center;">
+    <p>I LOVE</p>
+    <form id="reaccionForm" action="https://formspree.io/f/TU_ID_AQUÍ" method="POST">
+        <button type="submit" name="reaccion" value="Me encantó ❤️" style="font-size: 2rem; background: none; border: none; cursor: pointer;">❤️</button>
+        </form>
+        <p>YOU</p>
+</div>
+    </div>
+
+
+</body>
+</html>
